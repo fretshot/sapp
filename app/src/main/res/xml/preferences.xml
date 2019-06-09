@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <Preference
+        android:key="contacto_boton"
+        android:title="Contacto de Emergencia"
+        android:summary="Seleccione o modifique">
+    </Preference>
+
+    <CheckBoxPreference
+        android:key="mapa_satelital"
+        android:title="Vista Satelital"
+        android:summary="Muestra el mapa desde el satelite">
+    </CheckBoxPreference>
+
+    <EditTextPreference
+        android:title="contacto_emergencia"
+        android:key="contacto_emergencia" />
+
+
+
+</PreferenceScreen>

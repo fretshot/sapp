@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fretshot.ihc.sapp.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/pantalla_principal">
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivityCurrentPlace" />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/alert_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:slider_locked="false"
+        android:elevation="12dp"
+        app:text="Lanzar Alerta"
+        app:text_size="18sp"
+        app:text_style="bold" />
+
+</android.support.constraint.ConstraintLayout>
